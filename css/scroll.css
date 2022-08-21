@@ -1,0 +1,33 @@
+ /* 设置滚动条整体部分的样式 */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    /* 滚动槽--外层轨道 */
+    ::-webkit-scrollbar-track {
+        background: transparent;
+        opacity: 0
+    }
+
+    /* 内层轨道（不包含滚动块部分） */
+    ::-webkit-scrollbar-track-piece {
+        opacity: 0;   /* 透明度设置为全透明，使得滚动条背景色为网页颜色 */
+    }
+
+    /* 滚动条滑块 */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        background: rgba(92, 110, 130, 0.6);
+    }
+
+    /* 滚动条按钮 */
+    ::-webkit-scrollbar-button {
+        display: none;
+    }
+
+ /* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+    ::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+        
